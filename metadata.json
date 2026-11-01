@@ -1,0 +1,6 @@
+{
+  "name": "AuraStay - Hotel & Villa PMS Platform",
+  "description": "Comprehensive Hospitality Management System, Channel Manager with real-time OTA synchronization, dynamic pricing, offline billing with quotations/receipts, and automated GST filing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom neon glow and scrollbar utilities */
+.neon-glow-orange {
+  box-shadow: 0 0 20px -2px rgba(255, 107, 0, 0.4), 0 0 6px 0 rgba(255, 107, 0, 0.25);
+}
+
+.neon-glow-orange-sm {
+  box-shadow: 0 0 10px -1px rgba(255, 107, 0, 0.35);
+}
+
+.neon-glow-orange-lg {
+  box-shadow: 0 0 35px 2px rgba(255, 107, 0, 0.45);
+}
+
+.neon-border {
+  border-color: rgba(255, 107, 0, 0.45);
+}
+
+.neon-border:hover {
+  border-color: rgba(255, 107, 0, 0.8);
+}
+
+/* Custom scrollbar for calendar matrices & feeds */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 107, 0, 0.5);
+}
+
+/* Print specific styles for invoice / quotation */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .printable-document {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    width: 100% !important;
+  }
+}
